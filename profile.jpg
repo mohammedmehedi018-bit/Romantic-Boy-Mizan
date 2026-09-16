@@ -1,1 +1,1043 @@
 
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Romantic Boy Mizan | Official</title>
+
+    <meta name="description"
+          content="Romantic Boy Mizan - Video Editing, CapCut, Premiere Pro, After Effects Tutorials & Resources.">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Noto+Sans+Bengali:wght@400;500;600;700;800&display=swap"
+          rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --bg: #050507;
+            --bg2: #09090d;
+            --card: rgba(255,255,255,.045);
+            --border: rgba(255,255,255,.09);
+
+            --primary: #ff2d75;
+            --secondary: #8b5cf6;
+            --cyan: #22d3ee;
+
+            --text: #ffffff;
+            --muted: #a1a1aa;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: "Inter", "Noto Sans Bengali", sans-serif;
+            background:
+                radial-gradient(circle at 15% 10%, rgba(139,92,246,.15), transparent 30%),
+                radial-gradient(circle at 85% 20%, rgba(255,45,117,.10), transparent 30%),
+                var(--bg);
+            color: var(--text);
+            overflow-x: hidden;
+        }
+
+        body::before {
+            content: "";
+            position: fixed;
+            inset: 0;
+            pointer-events: none;
+            opacity: .035;
+            background-image:
+                linear-gradient(rgba(255,255,255,.5) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(255,255,255,.5) 1px, transparent 1px);
+            background-size: 40px 40px;
+            z-index: -1;
+        }
+
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        .container {
+            width: min(1120px, 92%);
+            margin: auto;
+        }
+
+        /* NAV */
+
+        nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000;
+            background: rgba(5,5,7,.75);
+            backdrop-filter: blur(18px);
+            border-bottom: 1px solid rgba(255,255,255,.06);
+        }
+
+        .nav-inner {
+            height: 72px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .logo {
+            font-weight: 900;
+            letter-spacing: -1px;
+            font-size: 18px;
+        }
+
+        .logo span {
+            color: var(--primary);
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 28px;
+            list-style: none;
+            color: #bdbdc5;
+            font-size: 14px;
+        }
+
+        .nav-links a {
+            transition: .25s;
+        }
+
+        .nav-links a:hover {
+            color: white;
+        }
+
+        .menu {
+            display: none;
+            font-size: 25px;
+            cursor: pointer;
+        }
+
+        /* HERO */
+
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            padding-top: 100px;
+            position: relative;
+        }
+
+        .hero::after {
+            content: "";
+            position: absolute;
+            width: 500px;
+            height: 500px;
+            background: var(--primary);
+            filter: blur(180px);
+            opacity: .10;
+            right: -200px;
+            top: 100px;
+            z-index: -1;
+        }
+
+        .hero-content {
+            max-width: 800px;
+        }
+
+        .badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 8px 13px;
+            border-radius: 999px;
+            border: 1px solid rgba(255,45,117,.25);
+            background: rgba(255,45,117,.07);
+            color: #ff7da7;
+            font-size: 12px;
+            font-weight: 700;
+            letter-spacing: 1px;
+            margin-bottom: 25px;
+        }
+
+        .dot {
+            width: 7px;
+            height: 7px;
+            border-radius: 50%;
+            background: #34d399;
+            box-shadow: 0 0 12px #34d399;
+        }
+
+        h1 {
+            font-size: clamp(55px, 10vw, 115px);
+            line-height: .86;
+            letter-spacing: -6px;
+            font-weight: 900;
+            text-transform: uppercase;
+        }
+
+        h1 span {
+            display: block;
+            background: linear-gradient(
+                100deg,
+                #fff,
+                #ff4f91,
+                #9b7bff
+            );
+            -webkit-background-clip: text;
+            color: transparent;
+        }
+
+        .hero-text {
+            max-width: 620px;
+            margin-top: 30px;
+            color: var(--muted);
+            line-height: 1.8;
+            font-size: 16px;
+        }
+
+        .buttons {
+            display: flex;
+            gap: 12px;
+            flex-wrap: wrap;
+            margin-top: 30px;
+        }
+
+        .btn {
+            padding: 14px 21px;
+            border-radius: 10px;
+            font-weight: 700;
+            font-size: 14px;
+            border: 1px solid var(--border);
+            transition: .25s;
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, var(--primary), #a855f7);
+            border: none;
+            box-shadow: 0 10px 35px rgba(255,45,117,.2);
+        }
+
+        .btn-secondary {
+            background: rgba(255,255,255,.04);
+        }
+
+        .btn:hover {
+            transform: translateY(-3px);
+        }
+
+        /* PROFILE */
+
+        .profile-card {
+            margin-top: 70px;
+            padding: 25px;
+            border: 1px solid var(--border);
+            background: rgba(255,255,255,.035);
+            border-radius: 20px;
+            backdrop-filter: blur(15px);
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .avatar {
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+            display: grid;
+            place-items: center;
+            font-size: 25px;
+            font-weight: 900;
+            background: linear-gradient(135deg, #ff2d75, #8b5cf6);
+            box-shadow: 0 0 35px rgba(255,45,117,.25);
+        }
+
+        .profile-info h3 {
+            font-size: 18px;
+        }
+
+        .profile-info p {
+            color: var(--muted);
+            margin-top: 5px;
+            font-size: 13px;
+        }
+
+        /* SECTION */
+
+        section {
+            padding: 100px 0;
+        }
+
+        .section-label {
+            color: var(--primary);
+            font-size: 12px;
+            font-weight: 800;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            margin-bottom: 12px;
+        }
+
+        .section-title {
+            font-size: clamp(32px, 5vw, 55px);
+            letter-spacing: -2px;
+            margin-bottom: 15px;
+        }
+
+        .section-desc {
+            color: var(--muted);
+            max-width: 650px;
+            line-height: 1.8;
+        }
+
+        /* STATS */
+
+        .stats {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 15px;
+            margin-top: 35px;
+        }
+
+        .stat {
+            padding: 30px;
+            border: 1px solid var(--border);
+            border-radius: 17px;
+            background: var(--card);
+        }
+
+        .stat-number {
+            font-size: 35px;
+            font-weight: 900;
+        }
+
+        .stat-name {
+            color: var(--muted);
+            margin-top: 7px;
+            font-size: 13px;
+        }
+
+        /* SKILLS */
+
+        .skills {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 15px;
+            margin-top: 40px;
+        }
+
+        .skill {
+            padding: 25px;
+            border-radius: 16px;
+            border: 1px solid var(--border);
+            background: linear-gradient(
+                145deg,
+                rgba(255,255,255,.05),
+                rgba(255,255,255,.015)
+            );
+            transition: .3s;
+        }
+
+        .skill:hover {
+            transform: translateY(-6px);
+            border-color: rgba(255,45,117,.35);
+        }
+
+        .skill-icon {
+            font-size: 28px;
+            margin-bottom: 18px;
+        }
+
+        .skill h3 {
+            font-size: 16px;
+        }
+
+        .skill p {
+            color: var(--muted);
+            font-size: 13px;
+            margin-top: 8px;
+            line-height: 1.6;
+        }
+
+        /* FEATURE */
+
+        .feature {
+            margin-top: 40px;
+            border-radius: 22px;
+            border: 1px solid var(--border);
+            background:
+                linear-gradient(120deg,
+                    rgba(139,92,246,.13),
+                    rgba(255,45,117,.06)
+                );
+            padding: 45px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .feature::after {
+            content: "▶";
+            position: absolute;
+            right: 40px;
+            top: 25px;
+            font-size: 130px;
+            opacity: .025;
+        }
+
+        .feature-tag {
+            color: var(--cyan);
+            font-size: 12px;
+            font-weight: 800;
+            letter-spacing: 2px;
+        }
+
+        .feature h3 {
+            font-size: clamp(25px, 4vw, 42px);
+            margin-top: 15px;
+        }
+
+        .feature p {
+            color: var(--muted);
+            max-width: 600px;
+            margin-top: 15px;
+            line-height: 1.7;
+        }
+
+        /* TUTORIALS */
+
+        .tutorial-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 18px;
+            margin-top: 40px;
+        }
+
+        .tutorial {
+            border: 1px solid var(--border);
+            background: var(--card);
+            border-radius: 18px;
+            padding: 25px;
+            transition: .3s;
+        }
+
+        .tutorial:hover {
+            transform: translateY(-5px);
+            border-color: rgba(139,92,246,.35);
+        }
+
+        .tutorial-category {
+            color: var(--primary);
+            font-size: 11px;
+            font-weight: 800;
+            letter-spacing: 1px;
+        }
+
+        .tutorial h3 {
+            margin-top: 15px;
+            font-size: 19px;
+        }
+
+        .tutorial p {
+            margin-top: 10px;
+            color: var(--muted);
+            font-size: 13px;
+            line-height: 1.7;
+        }
+
+        /* ABOUT */
+
+        .about-grid {
+            display: grid;
+            grid-template-columns: 1.2fr .8fr;
+            gap: 30px;
+            align-items: center;
+        }
+
+        .about-text {
+            color: var(--muted);
+            line-height: 1.9;
+        }
+
+        .about-box {
+            padding: 30px;
+            border: 1px solid var(--border);
+            border-radius: 18px;
+            background: var(--card);
+        }
+
+        .about-box strong {
+            display: block;
+            font-size: 35px;
+            margin-bottom: 8px;
+        }
+
+        .about-box span {
+            color: var(--muted);
+            font-size: 13px;
+        }
+
+        /* SOCIAL */
+
+        .social {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+            margin-top: 30px;
+        }
+
+        .social a {
+            padding: 13px 18px;
+            border: 1px solid var(--border);
+            border-radius: 10px;
+            background: rgba(255,255,255,.035);
+            font-size: 13px;
+            transition: .25s;
+        }
+
+        .social a:hover {
+            background: rgba(255,45,117,.1);
+            border-color: rgba(255,45,117,.3);
+        }
+
+        /* FOOTER */
+
+        footer {
+            border-top: 1px solid var(--border);
+            padding: 35px 0;
+            color: #71717a;
+            font-size: 12px;
+        }
+
+        .footer-inner {
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+        }
+
+        /* MOBILE */
+
+        @media(max-width: 800px) {
+
+            .nav-links {
+                position: absolute;
+                top: 72px;
+                left: 0;
+                width: 100%;
+                background: #07070a;
+                flex-direction: column;
+                padding: 25px;
+                display: none;
+                border-bottom: 1px solid var(--border);
+            }
+
+            .nav-links.active {
+                display: flex;
+            }
+
+            .menu {
+                display: block;
+            }
+
+            h1 {
+                letter-spacing: -3px;
+            }
+
+            .stats {
+                grid-template-columns: 1fr;
+            }
+
+            .skills {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .tutorial-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .about-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .feature {
+                padding: 30px;
+            }
+
+            .footer-inner {
+                flex-direction: column;
+            }
+        }
+
+        @media(max-width: 500px) {
+
+            .hero {
+                min-height: auto;
+                padding-top: 150px;
+                padding-bottom: 80px;
+            }
+
+            h1 {
+                font-size: 55px;
+            }
+
+            .profile-card {
+                padding: 18px;
+            }
+
+            .skills {
+                grid-template-columns: 1fr;
+            }
+
+            section {
+                padding: 75px 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<!-- NAV -->
+<nav>
+    <div class="container nav-inner">
+
+        <a href="#" class="logo">
+            ROMANTIC <span>BOY</span> MIZAN
+        </a>
+
+        <ul class="nav-links" id="navLinks">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#tutorials">Tutorials</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+
+        <div class="menu" onclick="toggleMenu()">☰</div>
+
+    </div>
+</nav>
+
+
+<!-- HERO -->
+<section class="hero" id="home">
+    <div class="container">
+
+        <div class="hero-content">
+
+            <div class="badge">
+                <span class="dot"></span>
+                OFFICIAL CREATOR HUB
+            </div>
+
+            <h1>
+                ROMANTIC
+                <span>BOY MIZAN</span>
+            </h1>
+
+            <p class="hero-text">
+                Video Editing শিখুন সহজভাবে।
+                CapCut, Premiere Pro, After Effects,
+                cinematic color grading, effects, transitions
+                এবং creative editing tips নিয়ে নিয়মিত tutorial।
+            </p>
+
+            <div class="buttons">
+                <a href="#tutorials" class="btn btn-primary">
+                    📚 Explore Tutorials
+                </a>
+
+                <a href="https://youtube.com/"
+                   target="_blank"
+                   class="btn btn-secondary">
+                    ▶ YouTube Channel
+                </a>
+            </div>
+
+            <div class="profile-card">
+
+                <div class="avatar">
+                    M
+                </div>
+
+                <div class="profile-info">
+                    <h3>Romantic Boy Mizan</h3>
+                    <p>
+                        Video Editor • Content Creator • Tutorial Maker
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+
+<!-- STATS -->
+<section>
+    <div class="container">
+
+        <div class="section-label">
+            COMMUNITY
+        </div>
+
+        <h2 class="section-title">
+            Creator Community
+        </h2>
+
+        <p class="section-desc">
+            Editing শেখার পাশাপাশি নতুন content,
+            resources এবং creative updates-এর সাথে যুক্ত থাকুন।
+        </p>
+
+        <div class="stats">
+
+            <div class="stat">
+                <div class="stat-number">YouTube</div>
+                <div class="stat-name">
+                    Video Tutorials
+                </div>
+            </div>
+
+            <div class="stat">
+                <div class="stat-number">CapCut</div>
+                <div class="stat-name">
+                    Mobile Editing
+                </div>
+            </div>
+
+            <div class="stat">
+                <div class="stat-number">AE</div>
+                <div class="stat-name">
+                    Advanced Effects
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+
+<!-- SKILLS -->
+<section id="skills">
+    <div class="container">
+
+        <div class="section-label">
+            WHAT I TEACH
+        </div>
+
+        <h2 class="section-title">
+            Editing Skills
+        </h2>
+
+        <div class="skills">
+
+            <div class="skill">
+                <div class="skill-icon">🎬</div>
+                <h3>Video Editing</h3>
+                <p>
+                    Professional workflow এবং clean editing techniques।
+                </p>
+            </div>
+
+            <div class="skill">
+                <div class="skill-icon">🎨</div>
+                <h3>Color Grading</h3>
+                <p>
+                    Cinematic look, color correction এবং grading।
+                </p>
+            </div>
+
+            <div class="skill">
+                <div class="skill-icon">✨</div>
+                <h3>Effects</h3>
+                <p>
+                    Trending effects, transitions এবং creative animations।
+                </p>
+            </div>
+
+            <div class="skill">
+                <div class="skill-icon">📱</div>
+                <h3>CapCut</h3>
+                <p>
+                    Mobile editing-এর জন্য practical CapCut tutorials।
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+
+<!-- FEATURED -->
+<section>
+    <div class="container">
+
+        <div class="section-label">
+            FEATURED
+        </div>
+
+        <h2 class="section-title">
+            Latest Tutorial
+        </h2>
+
+        <div class="feature">
+
+            <div class="feature-tag">
+                FEATURED • VIDEO EDITING
+            </div>
+
+            <h3>
+                Professional Video Editing Tutorial
+            </h3>
+
+            <p>
+                নতুন editing techniques, cinematic effects,
+                transitions এবং creative workflow শিখুন।
+                Full tutorial দেখতে YouTube channel-এ visit করুন।
+            </p>
+
+            <div class="buttons">
+
+                <a href="https://youtube.com/"
+                   target="_blank"
+                   class="btn btn-primary">
+                    ▶ Watch Tutorial
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+
+<!-- TUTORIALS -->
+<section id="tutorials">
+    <div class="container">
+
+        <div class="section-label">
+            TUTORIALS
+        </div>
+
+        <h2 class="section-title">
+            Learn & Create
+        </h2>
+
+        <p class="section-desc">
+            Beginner থেকে advanced level পর্যন্ত editing tutorial।
+        </p>
+
+        <div class="tutorial-grid">
+
+            <article class="tutorial">
+                <div class="tutorial-category">
+                    CAPCUT
+                </div>
+
+                <h3>
+                    Cinematic Video Edit
+                </h3>
+
+                <p>
+                    CapCut দিয়ে cinematic style video
+                    তৈরি করার complete workflow।
+                </p>
+            </article>
+
+
+            <article class="tutorial">
+                <div class="tutorial-category">
+                    PREMIERE PRO
+                </div>
+
+                <h3>
+                    Professional Color Grading
+                </h3>
+
+                <p>
+                    Video-কে professional এবং cinematic
+                    look দেওয়ার techniques।
+                </p>
+            </article>
+
+
+            <article class="tutorial">
+                <div class="tutorial-category">
+                    AFTER EFFECTS
+                </div>
+
+                <h3>
+                    Trending Text Animation
+                </h3>
+
+                <p>
+                    Modern text animation এবং motion
+                    effects সহজভাবে তৈরি করুন।
+                </p>
+            </article>
+
+        </div>
+
+    </div>
+</section>
+
+
+<!-- ABOUT -->
+<section id="about">
+    <div class="container">
+
+        <div class="about-grid">
+
+            <div>
+
+                <div class="section-label">
+                    ABOUT ME
+                </div>
+
+                <h2 class="section-title">
+                    Create Without Limits.
+                </h2>
+
+                <p class="about-text">
+                    আমি Romantic Boy Mizan।
+                    Video editing এবং creative content নিয়ে
+                    সহজ ও practical tutorial তৈরি করি।
+                    নতুন editing techniques, effects,
+                    transitions এবং cinematic workflow
+                    শেখানোই এই platform-এর মূল উদ্দেশ্য।
+                </p>
+
+                <div class="social">
+
+                    <a href="https://youtube.com/"
+                       target="_blank">
+                        ▶ YouTube
+                    </a>
+
+                    <a href="https://t.me/"
+                       target="_blank">
+                        ✈ Telegram
+                    </a>
+
+                    <a href="#contact">
+                        💼 Contact
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <div class="about-box">
+
+                <strong>100%</strong>
+
+                <span>
+                    Creative Editing & Learning
+                </span>
+
+                <br><br>
+
+                <strong>24/7</strong>
+
+                <span>
+                    New Ideas & Resources
+                </span>
+
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+
+<!-- CONTACT -->
+<section id="contact">
+    <div class="container">
+
+        <div class="section-label">
+            STAY CONNECTED
+        </div>
+
+        <h2 class="section-title">
+            Follow The Journey.
+        </h2>
+
+        <p class="section-desc">
+            নতুন tutorial, resources এবং updates পেতে
+            social platforms-এ যুক্ত থাকুন।
+        </p>
+
+        <div class="social">
+
+            <a href="https://youtube.com/"
+               target="_blank">
+                ▶ YouTube Channel
+            </a>
+
+            <a href="https://t.me/"
+               target="_blank">
+                ✈ Telegram
+            </a>
+
+            <a href="mailto:your@email.com">
+                ✉ Email
+            </a>
+
+        </div>
+
+    </div>
+</section>
+
+
+<!-- FOOTER -->
+<footer>
+    <div class="container footer-inner">
+
+        <div>
+            © 2026 Romantic Boy Mizan
+        </div>
+
+        <div>
+            Video Editing • Tutorials • Resources
+        </div>
+
+    </div>
+</footer>
+
+
+<script>
+
+    function toggleMenu() {
+        document
+            .getElementById("navLinks")
+            .classList
+            .toggle("active");
+    }
+
+    document.querySelectorAll(".nav-links a").forEach(link => {
+        link.addEventListener("click", () => {
+            document
+                .getElementById("navLinks")
+                .classList
+                .remove("active");
+        });
+    });
+
+</script>
+
+</body>
+</html>
