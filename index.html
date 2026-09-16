@@ -1,20 +1,36 @@
 <!DOCTYPE html>
 <html lang="bn">
+
 <head>
+
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Romantic Boy Mizan</title>
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
 
-<meta name="description"
-content="Romantic Boy Mizan — Video Editing, Creative Content & Tutorials">
+<title>Romantic Boy Mizan | Official</title>
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<meta
+name="description"
+content="Romantic Boy Mizan — Official Website | Video Editing, Creative Content, YouTube & Telegram"
+>
 
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+<link rel="preconnect"
+href="https://fonts.googleapis.com">
+
+<link rel="preconnect"
+href="https://fonts.gstatic.com"
+crossorigin>
+
+<link
+href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Oswald:wght@500;600;700&display=swap"
+rel="stylesheet">
 
 <style>
+
+/* =========================================
+   RESET
+========================================= */
 
 *{
     margin:0;
@@ -27,346 +43,433 @@ html{
 }
 
 body{
+
     font-family:'Inter',sans-serif;
-    background:#050505;
+
+    background:#030303;
+
     color:#fff;
+
     overflow-x:hidden;
 }
 
-/* =========================
-   BACKGROUND
-========================= */
+
+/* =========================================
+   GLOBAL BACKGROUND
+========================================= */
 
 body::before{
+
     content:"";
+
     position:fixed;
-    width:500px;
-    height:500px;
-    background:#ff2d75;
-    filter:blur(180px);
-    opacity:.10;
+
+    width:550px;
+    height:550px;
+
+    left:-220px;
     top:-200px;
-    left:-150px;
-    z-index:-2;
+
+    background:#ff0000;
+
+    opacity:.09;
+
+    filter:blur(170px);
+
+    pointer-events:none;
+
+    z-index:-5;
 }
+
 
 body::after{
+
     content:"";
+
     position:fixed;
-    width:450px;
-    height:450px;
-    background:#8b5cf6;
-    filter:blur(180px);
-    opacity:.09;
-    right:-180px;
-    bottom:-100px;
-    z-index:-2;
+
+    width:500px;
+    height:500px;
+
+    right:-220px;
+    bottom:-200px;
+
+    background:#ff0000;
+
+    opacity:.07;
+
+    filter:blur(170px);
+
+    pointer-events:none;
+
+    z-index:-5;
 }
 
-/* =========================
-   NAVBAR
-========================= */
 
-nav{
+/* =========================================
+   NAVBAR
+========================================= */
+
+.navbar{
+
     position:fixed;
+
     top:0;
     left:0;
-    width:100%;
-    z-index:1000;
 
-    background:rgba(5,5,5,.72);
-    backdrop-filter:blur(18px);
-    border-bottom:1px solid rgba(255,255,255,.06);
+    width:100%;
+
+    z-index:9999;
+
+    background:rgba(0,0,0,.78);
+
+    backdrop-filter:blur(20px);
+
+    border-bottom:
+    1px solid rgba(255,255,255,.07);
 }
 
-.nav-inner{
+
+.nav-container{
+
     max-width:1150px;
+
     margin:auto;
-    padding:18px 22px;
+
+    padding:16px 22px;
 
     display:flex;
-    justify-content:space-between;
+
     align-items:center;
+
+    justify-content:space-between;
 }
+
 
 .logo{
-    font-weight:900;
+
+    text-decoration:none;
+
+    color:#fff;
+
     font-size:18px;
+
+    font-weight:900;
+
     letter-spacing:1px;
-
-    background:linear-gradient(
-        90deg,
-        #ff2d75,
-        #ff5fa2,
-        #8b5cf6
-    );
-
-    -webkit-background-clip:text;
-    color:transparent;
 }
 
-.nav-links{
+
+.logo span{
+
+    color:#ff1515;
+
+    text-shadow:
+    0 0 15px rgba(255,0,0,.7);
+}
+
+
+.nav-menu{
+
     display:flex;
-    gap:28px;
+
+    align-items:center;
+
+    gap:30px;
+
     list-style:none;
 }
 
-.nav-links a{
-    color:#aaa;
+
+.nav-menu a{
+
     text-decoration:none;
-    font-size:14px;
+
+    color:#aaa;
+
+    font-size:13px;
+
+    font-weight:600;
+
     transition:.3s;
 }
 
-.nav-links a:hover{
+
+.nav-menu a:hover{
+
+    color:#fff;
+
+    text-shadow:
+    0 0 12px rgba(255,0,0,.7);
+}
+
+
+.menu-button{
+
+    display:none;
+
+    cursor:pointer;
+
+    font-size:25px;
+
     color:#fff;
 }
 
-.menu{
-    display:none;
-    font-size:24px;
-    cursor:pointer;
-}
 
-/* =========================
+/* =========================================
    HERO
-========================= */
+========================================= */
 
 .hero{
+
     min-height:100vh;
+
     max-width:1150px;
+
     margin:auto;
 
     padding:
-        150px 22px
-        80px;
+    140px 22px 90px;
 
     display:flex;
+
     align-items:center;
+
     justify-content:center;
+
+    text-align:center;
 }
+
 
 .hero-content{
-    text-align:center;
-    max-width:850px;
+
+    max-width:900px;
+
+    width:100%;
 }
 
-/* PROFILE */
 
-.profile-wrap{
-    width:145px;
-    height:145px;
-    margin:0 auto 28px;
+/* =========================================
+   PROFILE
+========================================= */
 
-    padding:4px;
+.profile-box{
+
+    width:190px;
+    height:190px;
+
+    margin:
+    0 auto 28px;
+
+    padding:5px;
 
     border-radius:50%;
 
     background:
-        linear-gradient(
-            135deg,
-            #ff2d75,
-            #8b5cf6,
-            #ff2d75
-        );
+
+    linear-gradient(
+        135deg,
+        #ff0000,
+        #ffffff,
+        #ff0000,
+        #550000
+    );
 
     box-shadow:
-        0 0 30px rgba(255,45,117,.35),
-        0 0 70px rgba(139,92,246,.18);
 
-    animation:profileGlow 4s ease-in-out infinite;
+    0 0 25px rgba(255,0,0,.65),
+
+    0 0 70px rgba(255,0,0,.20);
+
+    animation:
+    profilePulse 4s ease-in-out infinite;
 }
 
-.profile{
+
+.profile-box img{
+
     width:100%;
     height:100%;
 
     object-fit:cover;
 
+    display:block;
+
     border-radius:50%;
 
-    border:4px solid #050505;
-
-    display:block;
+    border:5px solid #030303;
 }
 
-@keyframes profileGlow{
+
+@keyframes profilePulse{
 
     0%,100%{
+
         transform:scale(1);
+
         box-shadow:
-        0 0 30px rgba(255,45,117,.35);
+        0 0 25px rgba(255,0,0,.55);
     }
 
     50%{
-        transform:scale(1.04);
+
+        transform:scale(1.035);
+
         box-shadow:
-        0 0 55px rgba(255,45,117,.55);
+        0 0 50px rgba(255,0,0,.85);
     }
 }
 
-/* SMALL LABEL */
 
-.hero-label{
-    color:#ff4c8b;
+/* =========================================
+   SMALL TITLE
+========================================= */
+
+.hero-small{
 
     font-size:12px;
+
     font-weight:800;
 
-    letter-spacing:3px;
+    letter-spacing:4px;
 
-    margin-bottom:18px;
+    color:#ff2929;
+
+    margin-bottom:16px;
 }
 
-/* NAME */
 
-.hero h1{
-    line-height:.92;
+/* =========================================
+   MAIN NAME
+========================================= */
+
+.hero-name{
+
+    font-family:'Oswald',sans-serif;
+
+    line-height:.9;
+
+    margin-bottom:25px;
+}
+
+
+.hero-name .romantic{
+
+    display:block;
+
+    color:#eee;
 
     font-size:
-        clamp(55px,10vw,105px);
 
-    font-weight:900;
+    clamp(
+        28px,
+        5vw,
+        48px
+    );
 
-    letter-spacing:-5px;
+    letter-spacing:7px;
 
-    margin-bottom:24px;
+    font-weight:600;
+
+    margin-bottom:12px;
+
+    text-shadow:
+    0 3px 12px rgba(255,255,255,.15);
 }
 
-.hero h1 .romantic{
+
+.hero-name .boy{
+
     display:block;
 
     color:#fff;
 
-    font-size:.42em;
+    font-size:
 
-    letter-spacing:8px;
-
-    margin-bottom:14px;
-}
-
-.hero h1 .mizan{
-
-    background:
-        linear-gradient(
-            90deg,
-            #ff2d75,
-            #ff6da4,
-            #8b5cf6
-        );
-
-    -webkit-background-clip:text;
-    color:transparent;
-
-    background-size:200%;
-
-    animation:gradientMove 5s linear infinite;
-}
-
-@keyframes gradientMove{
-
-    0%{
-        background-position:0%;
-    }
-
-    100%{
-        background-position:200%;
-    }
-}
-
-/* DESCRIPTION */
-
-.hero-description{
-    max-width:650px;
-    margin:auto;
-
-    color:#a7a7a7;
-
-    line-height:1.8;
-
-    font-size:16px;
-}
-
-/* BUTTONS */
-
-.hero-buttons{
-
-    margin-top:32px;
-
-    display:flex;
-
-    justify-content:center;
-
-    gap:14px;
-
-    flex-wrap:wrap;
-}
-
-.btn{
-
-    padding:14px 24px;
-
-    border-radius:12px;
-
-    text-decoration:none;
+    clamp(
+        58px,
+        12vw,
+        120px
+    );
 
     font-weight:700;
 
-    font-size:14px;
+    letter-spacing:-2px;
 
-    transition:.3s;
-
-    display:inline-flex;
-
-    align-items:center;
-
-    gap:8px;
+    text-shadow:
+    0 5px 30px rgba(255,255,255,.1);
 }
 
-.btn-primary{
 
-    color:white;
+.hero-name .mizan{
 
-    background:
-        linear-gradient(
-            135deg,
-            #ff2d75,
-            #8b5cf6
-        );
+    display:block;
 
-    box-shadow:
-        0 10px 35px rgba(255,45,117,.2);
+    font-size:
+
+    clamp(
+        58px,
+        12vw,
+        120px
+    );
+
+    font-weight:700;
+
+    letter-spacing:5px;
+
+    color:#ff1111;
+
+    text-shadow:
+
+    0 0 10px rgba(255,0,0,.8),
+
+    0 0 35px rgba(255,0,0,.3);
+
+    animation:redGlow 3s ease-in-out infinite;
 }
 
-.btn-primary:hover{
 
-    transform:translateY(-3px);
+@keyframes redGlow{
 
-    box-shadow:
-        0 15px 45px rgba(255,45,117,.35);
+    0%,100%{
+
+        text-shadow:
+        0 0 10px rgba(255,0,0,.7),
+        0 0 30px rgba(255,0,0,.2);
+    }
+
+    50%{
+
+        text-shadow:
+        0 0 20px rgba(255,0,0,1),
+        0 0 55px rgba(255,0,0,.4);
+    }
 }
 
-.btn-outline{
 
-    color:#fff;
+/* =========================================
+   DESCRIPTION
+========================================= */
 
-    border:1px solid rgba(255,255,255,.12);
+.hero-description{
 
-    background:rgba(255,255,255,.03);
+    max-width:650px;
+
+    margin:auto;
+
+    color:#999;
+
+    font-size:15px;
+
+    line-height:1.9;
 }
 
-.btn-outline:hover{
 
-    background:rgba(255,255,255,.08);
+/* =========================================
+   BUTTONS
+========================================= */
 
-    transform:translateY(-3px);
-}
-
-/* =========================
-   SOCIAL
-========================= */
-
-.socials{
+.hero-buttons{
 
     margin-top:30px;
 
@@ -375,156 +478,436 @@ nav{
     justify-content:center;
 
     gap:12px;
+
+    flex-wrap:wrap;
 }
 
-.social{
 
-    width:44px;
-    height:44px;
+.btn{
 
-    display:flex;
+    display:inline-flex;
 
-    justify-content:center;
     align-items:center;
 
-    border-radius:50%;
+    justify-content:center;
 
-    color:#bbb;
+    gap:8px;
 
-    border:1px solid rgba(255,255,255,.09);
+    padding:
+    14px 24px;
+
+    border-radius:10px;
 
     text-decoration:none;
 
-    background:rgba(255,255,255,.025);
+    font-size:13px;
+
+    font-weight:800;
 
     transition:.3s;
 }
 
-.social:hover{
+
+.btn-red{
 
     color:#fff;
 
-    border-color:#ff2d75;
+    background:#e50909;
+
+    box-shadow:
+    0 10px 35px rgba(255,0,0,.25);
+}
+
+
+.btn-red:hover{
 
     transform:translateY(-4px);
 
+    background:#ff1111;
+
     box-shadow:
-        0 0 25px rgba(255,45,117,.25);
+    0 15px 45px rgba(255,0,0,.45);
 }
 
-/* =========================
-   SECTION
-========================= */
 
-section{
+.btn-dark{
+
+    color:#fff;
+
+    background:#111;
+
+    border:
+    1px solid rgba(255,255,255,.12);
+}
+
+
+.btn-dark:hover{
+
+    transform:translateY(-4px);
+
+    border-color:#ff2222;
+
+    box-shadow:
+    0 10px 35px rgba(255,0,0,.15);
+}
+
+
+/* =========================================
+   SOCIAL ICONS
+========================================= */
+
+.social-icons{
+
+    margin-top:25px;
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:12px;
+}
+
+
+.social-icon{
+
+    width:44px;
+    height:44px;
+
+    border-radius:50%;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    text-decoration:none;
+
+    color:#aaa;
+
+    background:#0b0b0b;
+
+    border:
+    1px solid rgba(255,255,255,.09);
+
+    transition:.3s;
+}
+
+
+.social-icon:hover{
+
+    color:#fff;
+
+    border-color:#ff1515;
+
+    transform:
+    translateY(-4px);
+
+    box-shadow:
+    0 0 25px rgba(255,0,0,.3);
+}
+
+
+/* =========================================
+   SECTION
+========================================= */
+
+.section{
 
     max-width:1150px;
 
     margin:auto;
 
-    padding:90px 22px;
+    padding:
+    90px 22px;
 }
 
-.section-title{
+
+.section-head{
 
     text-align:center;
 
     margin-bottom:45px;
 }
 
-.section-title span{
 
-    color:#ff2d75;
+.section-label{
+
+    color:#ff1717;
+
+    font-size:11px;
+
+    font-weight:900;
+
+    letter-spacing:4px;
+}
+
+
+.section-head h2{
+
+    font-family:'Oswald',sans-serif;
+
+    font-size:
+    clamp(34px,6vw,55px);
+
+    margin-top:10px;
+}
+
+
+.section-head p{
+
+    max-width:600px;
+
+    margin:
+    15px auto 0;
+
+    color:#888;
+
+    line-height:1.7;
+
+    font-size:14px;
+}
+
+
+/* =========================================
+   SOCIAL CARDS
+========================================= */
+
+.social-grid{
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(2,1fr);
+
+    gap:20px;
+}
+
+
+.social-card{
+
+    position:relative;
+
+    padding:30px;
+
+    min-height:210px;
+
+    border-radius:20px;
+
+    overflow:hidden;
+
+    background:
+    linear-gradient(
+        145deg,
+        #101010,
+        #070707
+    );
+
+    border:
+    1px solid rgba(255,255,255,.08);
+
+    transition:.4s;
+}
+
+
+.social-card::before{
+
+    content:"";
+
+    position:absolute;
+
+    width:180px;
+    height:180px;
+
+    border-radius:50%;
+
+    background:#ff0000;
+
+    filter:blur(90px);
+
+    opacity:.08;
+
+    right:-80px;
+    top:-80px;
+
+    transition:.4s;
+}
+
+
+.social-card:hover{
+
+    transform:
+    translateY(-8px);
+
+    border-color:
+    rgba(255,0,0,.35);
+
+    box-shadow:
+    0 20px 50px rgba(0,0,0,.4);
+}
+
+
+.social-card:hover::before{
+
+    opacity:.2;
+}
+
+
+.social-top{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:15px;
+
+    margin-bottom:20px;
+}
+
+
+.social-logo{
+
+    width:55px;
+    height:55px;
+
+    display:flex;
+
+    align-items:center;
+    justify-content:center;
+
+    border-radius:15px;
+
+    background:#151515;
+
+    font-size:27px;
+
+    border:
+    1px solid rgba(255,255,255,.08);
+}
+
+
+.youtube .social-logo{
+
+    color:#ff0000;
+
+    box-shadow:
+    0 0 25px rgba(255,0,0,.15);
+}
+
+
+.telegram .social-logo{
+
+    color:#42a5f5;
+}
+
+
+.social-card h3{
+
+    font-size:21px;
+
+    margin-bottom:5px;
+}
+
+
+.social-card .status{
+
+    color:#777;
 
     font-size:12px;
+}
+
+
+.social-card p{
+
+    color:#888;
+
+    line-height:1.7;
+
+    font-size:13px;
+
+    margin-bottom:20px;
+}
+
+
+.social-link{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    gap:7px;
+
+    color:#fff;
+
+    text-decoration:none;
+
+    font-size:13px;
 
     font-weight:800;
 
-    letter-spacing:3px;
+    transition:.3s;
 }
 
-.section-title h2{
 
-    font-size:
-        clamp(32px,5vw,52px);
+.social-link:hover{
 
-    margin-top:10px;
-
-    font-weight:900;
+    color:#ff2020;
 }
 
-/* =========================
-   CARDS
-========================= */
+
+/* =========================================
+   FEATURE CARDS
+========================================= */
 
 .cards{
 
     display:grid;
 
     grid-template-columns:
-        repeat(3,1fr);
+    repeat(3,1fr);
 
     gap:18px;
 }
 
+
 .card{
 
-    padding:28px;
+    padding:27px;
 
-    border-radius:20px;
+    border-radius:18px;
 
-    background:
-        linear-gradient(
-            145deg,
-            rgba(255,255,255,.055),
-            rgba(255,255,255,.015)
-        );
+    background:#0a0a0a;
 
-    border:1px solid rgba(255,255,255,.07);
+    border:
+    1px solid rgba(255,255,255,.07);
 
     transition:.35s;
-
-    position:relative;
-
-    overflow:hidden;
 }
 
-.card::before{
-
-    content:"";
-
-    position:absolute;
-
-    width:150px;
-    height:150px;
-
-    background:#ff2d75;
-
-    filter:blur(80px);
-
-    opacity:0;
-
-    transition:.4s;
-}
-
-.card:hover::before{
-    opacity:.15;
-}
 
 .card:hover{
 
-    transform:translateY(-7px);
+    transform:
+    translateY(-7px);
 
     border-color:
-        rgba(255,45,117,.3);
+    rgba(255,0,0,.3);
 }
 
-.card-icon{
 
-    font-size:30px;
+.card-number{
+
+    color:#ff1616;
+
+    font-size:12px;
+
+    font-weight:900;
+
+    letter-spacing:2px;
 
     margin-bottom:18px;
 }
+
 
 .card h3{
 
@@ -533,507 +916,34 @@ section{
     margin-bottom:10px;
 }
 
+
 .card p{
 
-    color:#999;
+    color:#888;
 
-    line-height:1.7;
-
-    font-size:14px;
-}
-
-/* =========================
-   FEATURE
-========================= */
-
-.feature{
-
-    padding:50px 30px;
-
-    border-radius:25px;
-
-    border:1px solid rgba(255,255,255,.08);
-
-    background:
-        linear-gradient(
-            120deg,
-            rgba(255,45,117,.09),
-            rgba(139,92,246,.08)
-        );
-
-    text-align:center;
-}
-
-.feature h2{
-
-    font-size:
-        clamp(28px,5vw,48px);
-
-    margin-bottom:15px;
-}
-
-.feature p{
-
-    max-width:600px;
-
-    margin:0 auto 25px;
-
-    color:#999;
+    font-size:13px;
 
     line-height:1.8;
 }
 
-/* =========================
-   FOOTER
-========================= */
 
-footer{
+/* =========================================
+   FEATURE BANNER
+========================================= */
 
-    border-top:1px solid rgba(255,255,255,.07);
+.feature-banner{
+
+    position:relative;
+
+    overflow:hidden;
 
     text-align:center;
 
-    padding:35px 20px;
+    padding:
+    55px 25px;
 
-    color:#777;
+    border-radius:25px;
 
-    font-size:13px;
-}
+    background:
 
-footer strong{
-
-    color:#ff4c8b;
-}
-
-/* =========================
-   ANIMATION
-========================= */
-
-.fade{
-
-    animation:
-        fadeUp 1s ease both;
-}
-
-@keyframes fadeUp{
-
-    from{
-        opacity:0;
-        transform:translateY(25px);
-    }
-
-    to{
-        opacity:1;
-        transform:translateY(0);
-    }
-}
-
-/* =========================
-   MOBILE
-========================= */
-
-@media(max-width:700px){
-
-    .nav-links{
-
-        display:none;
-
-        position:absolute;
-
-        top:70px;
-
-        left:15px;
-        right:15px;
-
-        padding:20px;
-
-        flex-direction:column;
-
-        gap:18px;
-
-        background:#101010;
-
-        border:
-            1px solid
-            rgba(255,255,255,.08);
-
-        border-radius:15px;
-    }
-
-    .nav-links.active{
-        display:flex;
-    }
-
-    .menu{
-        display:block;
-    }
-
-    .hero{
-        padding-top:130px;
-    }
-
-    .hero h1{
-        letter-spacing:-3px;
-    }
-
-    .cards{
-        grid-template-columns:1fr;
-    }
-
-    section{
-        padding:70px 18px;
-    }
-
-    .profile-wrap{
-        width:125px;
-        height:125px;
-    }
-
-}
-
-</style>
-</head>
-
-<body>
-
-<!-- =========================
-     NAVBAR
-========================= -->
-
-<nav>
-
-<div class="nav-inner">
-
-<a href="#" class="logo">
-ROMANTIC BOY MIZAN
-</a>
-
-<ul class="nav-links" id="navLinks">
-
-<li><a href="#home">Home</a></li>
-<li><a href="#about">About</a></li>
-<li><a href="#content">Content</a></li>
-<li><a href="#contact">Contact</a></li>
-
-</ul>
-
-<div class="menu" onclick="toggleMenu()">
-☰
-</div>
-
-</div>
-
-</nav>
-
-
-<!-- =========================
-     HERO
-========================= -->
-
-<main id="home">
-
-<div class="hero">
-
-<div class="hero-content fade">
-
-<div class="profile-wrap">
-
-<img
-src="profile.jpg"
-alt="Romantic Boy Mizan"
-class="profile"
->
-
-</div>
-
-<div class="hero-label">
-OFFICIAL CREATOR • ROMANTIC BOY MIZAN
-</div>
-
-<h1>
-
-<span class="romantic">
-ROMANTIC
-</span>
-
-<span class="mizan">
-BOY MIZAN
-</span>
-
-</h1>
-
-<p class="hero-description">
-
-ভিডিও এডিটিং, Creative Content এবং নতুন
-Editing Techniques সহজভাবে শেখার জন্য
-Romantic Boy Mizan-এর Official Space.
-
-</p>
-
-<div class="hero-buttons">
-
-<a
-href="#content"
-class="btn btn-primary"
->
-Explore Content ✦
-</a>
-
-<a
-href="#contact"
-class="btn btn-outline"
->
-Connect With Me
-</a>
-
-</div>
-
-
-<div class="socials">
-
-<a
-href="#"
-class="social"
-title="YouTube"
->
-▶
-</a>
-
-<a
-href="#"
-class="social"
-title="Facebook"
->
-f
-</a>
-
-<a
-href="#"
-class="social"
-title="TikTok"
->
-♪
-</a>
-
-<a
-href="#"
-class="social"
-title="Telegram"
->
-✈
-</a>
-
-</div>
-
-</div>
-
-</div>
-
-</main>
-
-
-<!-- =========================
-     ABOUT
-========================= -->
-
-<section id="about">
-
-<div class="section-title">
-
-<span>ABOUT ME</span>
-
-<h2>
-Create. Edit. Inspire.
-</h2>
-
-</div>
-
-<div class="cards">
-
-<div class="card">
-
-<div class="card-icon">
-🎬
-</div>
-
-<h3>
-Video Editing
-</h3>
-
-<p>
-CapCut, Premiere Pro এবং অন্যান্য
-editing software দিয়ে professional
-video editing শেখানো হয়।
-</p>
-
-</div>
-
-
-<div class="card">
-
-<div class="card-icon">
-🎨
-</div>
-
-<h3>
-Color & Effects
-</h3>
-
-<p>
-Cinematic color grading, effects,
-transitions এবং creative editing
-techniques।
-</p>
-
-</div>
-
-
-<div class="card">
-
-<div class="card-icon">
-✨
-</div>
-
-<h3>
-Creative Ideas
-</h3>
-
-<p>
-নতুন creative concepts এবং
-trending editing ideas নিয়ে
-regular content।
-</p>
-
-</div>
-
-</div>
-
-</section>
-
-
-<!-- =========================
-     CONTENT
-========================= -->
-
-<section id="content">
-
-<div class="section-title">
-
-<span>FEATURED</span>
-
-<h2>
-Latest Content
-</h2>
-
-</div>
-
-<div class="feature">
-
-<h2>
-Learn. Edit. Create.
-</h2>
-
-<p>
-
-ভিডিও এডিটিং-এর নতুন tricks,
-effects, transitions এবং creative
-workflow শিখতে আমার latest content
-দেখুন।
-
-</p>
-
-<a
-href="#"
-class="btn btn-primary"
->
-Watch Tutorials ▶
-</a>
-
-</div>
-
-</section>
-
-
-<!-- =========================
-     CONTACT
-========================= -->
-
-<section id="contact">
-
-<div class="section-title">
-
-<span>STAY CONNECTED</span>
-
-<h2>
-Let's Connect
-</h2>
-
-</div>
-
-<div class="feature">
-
-<p>
-নতুন tutorial, editing tips এবং
-updates পেতে আমার social platforms
-follow করুন।
-</p>
-
-<a
-href="#"
-class="btn btn-primary"
->
-Follow Me ✦
-</a>
-
-</div>
-
-</section>
-
-
-<!-- =========================
-     FOOTER
-========================= -->
-
-<footer>
-
-© 2026
-<strong>Romantic Boy Mizan</strong>
-•
-All Rights Reserved.
-
-</footer>
-
-
-<script>
-
-function toggleMenu(){
-
-    document
-    .getElementById("navLinks")
-    .classList
-    .toggle("active");
-
-}
-
-document
-.querySelectorAll(".nav-links a")
-.forEach(link => {
-
-    link.addEventListener(
-        "click",
-        () => {
-
-            document
-            .getElementById("navLinks")
-            .classList
-            .remove("active");
-
-        }
-    );
-
-});
-
-</script>
-
-</body>
-</html>
+    linear-gradient
